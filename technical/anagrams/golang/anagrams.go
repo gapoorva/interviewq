@@ -58,3 +58,12 @@ func AreAnagrams2(a []byte, b []byte) bool {
 	}
 	return true
 }
+
+func BFSAngragramDistance(x []byte, y []byte) int {
+	// we assume x and y to be anagrams
+
+}
+
+func Distance(a []byte, b []byte) int {
+	// If
+}
