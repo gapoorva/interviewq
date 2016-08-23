@@ -44,7 +44,7 @@ Once you have a working solution, add an entry to the solutions table in the `re
 
 ### Language Specific Setup Instructions <a name="setup"></a>
 
-** Golang **
+**Golang**
 
 To work with golang, follow directions [here](https://golang.org/doc/install) to install Go and setup a `$GOPATH`. Clone this repo to `$GOPATH/src/github.com/gapoorva/interviewq`. You should be all good to go! 
 
