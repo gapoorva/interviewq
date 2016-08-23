@@ -1,6 +1,6 @@
 # Why are you a good fit for this role?
 
-** gapoorva **:
+**gapoorva**:
 
 As a developer, I honed my programming skills and philosophy in cultures that encourage shipping code. As a result, I’m comfortable taking initiative and ownership on projects. As an engineer at X, I built Y from a hobby prototype into a production-ready microservice in three months. When I left for the summer, I handed off a system that handled over Z times the amount of production level traffic supported by X at the time. I look to take a similar degree of ownership with projects at W.
 
