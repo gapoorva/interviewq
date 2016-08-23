@@ -14,9 +14,12 @@ func IsUnique1(s string) bool {
 }
 
 func IsUnique2(s string) bool {
+	if len(s) <= 1 {
+		return true
+	}
 	for i, a := range s {
-		for j, b := range s {
-			if i != j && a == b {
+		for _, b := range s[i+1:] {
+			if a == b {
 				return false
 			}
 		}
