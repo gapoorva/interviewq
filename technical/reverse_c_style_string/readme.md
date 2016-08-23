@@ -7,3 +7,9 @@ Write a function to reverse an array of ASCII characters (or bytes) that is term
 Example:
 
 `"my c-string\0"` should be reversed to `"gnirts-c ym\0"` 
+
+## Solutions
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| golang   | N      | 1     | gapoorva |

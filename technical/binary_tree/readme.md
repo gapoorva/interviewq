@@ -17,3 +17,28 @@ binary_tree:
   printInOrder()
   delete(elt)
 ```
+
+## Solutions
+
+**Add**
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| golang   | logN   | 1     | gapoorva |
+
+**Find**
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| golang   | logN   | 1     | gapoorva |
+
+**Print In Order**
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| golang   | logN   | N     | gapoorva |
+
+**Delete**
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|

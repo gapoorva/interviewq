@@ -10,3 +10,23 @@ Example:
 
 `"repeated"` should return `false`
 `"not same"` should return `true`
+
+## Solutions
+
+**Problem 1**
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| golang   | N      | N     | gapoorva |
+
+**Problem 2**
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| golang   | N^2    | 1     | gapoorva |
+
+**Problem 3**
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| golang   | logN   | 1     | gapoorva |
