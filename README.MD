@@ -24,7 +24,7 @@ Then, go ahead and add your question and an answer. Make sure to take credit for
 
 The technical folder contains coding interview questions. This is great for implementing a few questions on your own and seeing solutions to problems in a variety of languages.
 
-The technical folder will contain folders for different coding problems (and a book of coding problems). Each problem folder contains a `readme.md` that details the problem, may provide a few examples, and shows a table of current solutions for different languages and their runtime/space complexities. 
+The technical folder will contain folders for different coding problems. Each problem folder contains a `readme.md` that details the problem, may provide a few examples, and shows a table of current solutions for different languages and their runtime/space complexities. 
 
 Each problem folder will also have a folder for each language in which a solution is implemented. For example, a `golang` folder would contain a solution to the problem written in the Go programming language.
 
