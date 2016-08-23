@@ -29,4 +29,4 @@ Example:
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
-| golang   | logN   | 1     | gapoorva |
+| golang   | N*logN | 1     | gapoorva |
