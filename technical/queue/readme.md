@@ -22,28 +22,33 @@ Queue:
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
 | golang   | 1      | 1     | gapoorva |
+| c++      | 1      | 1     | gapoorva |
 
 **Push Back**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
 | golang   | 1      | 1     | gapoorva |
+| c++      | 1      | 1     | gapoorva |
 
 **Pop Front**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
 | golang   | 1      | 1     | gapoorva |
+| c++      | 1      | 1     | gapoorva |
 
 **Pop Back**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
 | golang   | 1      | 1     | gapoorva |
+| c++      | 1      | 1     | gapoorva |
 
 **Empty**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
 | golang   | 1      | 1     | gapoorva |
+| c++      | 1      | 1     | gapoorva |
  
