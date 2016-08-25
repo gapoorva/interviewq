@@ -11,3 +11,5 @@ The input `aaadaccaddde` should be shortened to `adce`
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
 | golang   | N^2    | 1     | gapoorva |
+| c++      | N^2    | 1     | gapoorva |
+
