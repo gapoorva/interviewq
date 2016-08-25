@@ -14,12 +14,12 @@ differentA = 'cinema'
 differentB = 'icemat'
 
 
-print anagram(emptyA, emptyB)
-print anagram(uneqA, uneqB)
-print anagram(reflexiveA, reflexiveB)
-print anagram(googleA, googleB)
-print anagram(extraA, extraB)
-print anagram(differentA, differentB)
+print 'two empty strings: ' + str(anagram(emptyA, emptyB))
+print 'two unique strings: ' + str(anagram(uneqA, uneqB))
+print 'the same string: ' + str(anagram(reflexiveA, reflexiveB))
+print 'anagram strings: ' + str(anagram(googleA, googleB))
+print 'one letter different strings: ' + str(anagram(extraA, extraB))
+print 'totally different strings: ' + str(anagram(differentA, differentB))
 
 
 
