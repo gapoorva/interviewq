@@ -18,27 +18,44 @@ binary_tree:
   delete(elt)
 ```
 
+Iterators are objects that model pointers on data structures. Iterators allow us to traverse a data structure incrementally (like in a loop.)
+
+Implement an iterator on that tree, such that one can traverse the tree in order. An "end" iterator should also be implemented so that the iterator can be used in a for loop. To specify, implement the following:
+```
+binary_tree.iterator:
+  reference_at_iterator()
+  next_value()
+  is_at_end()
+```
+
 ## Solutions
 
 **Add**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
-| golang   | logN   | 1     | gapoorva |
+| c++      | logN   | 1     | gapoorva |
 
 **Find**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
-| golang   | logN   | 1     | gapoorva |
+| c++      | logN   | 1     | gapoorva |
 
 **Print In Order**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
-| golang   | logN   | N     | gapoorva |
+| c++      | logN   | N     | gapoorva |
 
 **Delete**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
+| c++      | logN   | 1     | gapoorva |
+
+**Traversal**
+
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| c++      | logN   | N     | gapoorva |
