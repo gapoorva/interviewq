@@ -49,9 +49,11 @@ public:
   void remove(T);
 };
 
+// constructor
 template <typename T>
 binary_tree<T>::binary_tree(): root(nullptr) {}
 
+// Deletes all nodes, used in the destructor
 template <typename T>
 void binary_tree<T>::delete_helper(binary_tree<T>::node* n) {
   if(!n) return;
@@ -63,11 +65,14 @@ void binary_tree<T>::delete_helper(binary_tree<T>::node* n) {
   n = nullptr;
 }
 
+// destructor
 template <typename T>
 binary_tree<T>::~binary_tree() {
   delete_helper(root);
 }
 
+// adds value to node where it belongs in the tree.
+// if it's already there, nothing is added.
 template <typename T>
 void binary_tree<T>::add_helper(T val, binary_tree<T>::node* & n) {
   if(!n) {
@@ -83,11 +88,13 @@ void binary_tree<T>::add_helper(T val, binary_tree<T>::node* & n) {
   // if n contains data then we already have the value
 }
 
+// add operator
 template <typename T>
 void binary_tree<T>::add(T val) {
   add_helper(val, root);
 }
 
+// determines if a value exists in the tree.
 template <typename T>
 bool binary_tree<T>::find_helper(T val, binary_tree<T>::node* n) {
   if(!n) return false;
@@ -111,6 +118,7 @@ bool binary_tree<T>::empty() {
   return root == nullptr;
 }
 
+// return an iterator to the in-order first element
 template <typename T> 
 typename binary_tree<T>::iterator binary_tree<T>::first() {
   iterator i;
@@ -125,11 +133,13 @@ typename binary_tree<T>::iterator binary_tree<T>::first() {
   return i;
 }
 
+// return an iterator pointing to the "end" of the tree
 template <typename T>
 typename binary_tree<T>::iterator binary_tree<T>::end() {
   return iterator();
 }
 
+// prints node value
 template <typename T>
 void binary_tree<T>::print_helper(node* n) {
   if(n) {
@@ -146,6 +156,8 @@ void binary_tree<T>::print() {
   std::cout << "]\n";
 }
 
+// returns a pointer to the node that contains the value
+// if the value exists in the tree.
 template <typename T>
 typename binary_tree<T>::node*& binary_tree<T>::find_node(T val, binary_tree<T>::node*& n) {
   if(!n) return n;
@@ -156,6 +168,7 @@ typename binary_tree<T>::node*& binary_tree<T>::find_node(T val, binary_tree<T>:
   } else return n;
 }
 
+// return the in-order successor as a pointer
 template <typename T>
 typename binary_tree<T>::node* binary_tree<T>::in_order_successor(binary_tree<T>::node* n) {
   if(!n->right) return nullptr;
@@ -166,6 +179,7 @@ typename binary_tree<T>::node* binary_tree<T>::in_order_successor(binary_tree<T>
   return candidate;
 } 
 
+// return the in-orer successor as a pointer
 template <typename T>
 typename binary_tree<T>::node* binary_tree<T>::in_order_predecessor(binary_tree<T>::node* n){
   if (!n->left) return nullptr;
@@ -176,6 +190,10 @@ typename binary_tree<T>::node* binary_tree<T>::in_order_predecessor(binary_tree<
   return candidate;
 }
 
+// removes a node
+// simply removes if leaf node.
+// places the in order successor in it's place if it exists
+// otherwise, it places the in order predecessor in it's place
 template <typename T>
 void binary_tree<T>::remove_helper(binary_tree<T>::node* & n) {
   if(!n) return;
@@ -225,17 +243,20 @@ void binary_tree<T>::remove(T val) {
 template <typename T>
 binary_tree<T>::iterator::iterator() {}
 
+// copy ctor
 template <typename T>
 binary_tree<T>::iterator::iterator(const iterator& other) {
   nodes = other.nodes;
 }
 
+// assignment operator
 template <typename T>
 typename binary_tree<T>::iterator binary_tree<T>::iterator::operator=(const iterator& other) {
   this->nodes = other.nodes;
   return *this;
 }
 
+// increment
 template <typename T>
 typename binary_tree<T>::iterator binary_tree<T>::iterator::operator++() {
   if(!this->nodes.empty()) {
@@ -253,12 +274,14 @@ typename binary_tree<T>::iterator binary_tree<T>::iterator::operator++() {
   return *this;
 }
 
+// get a reference to the underlying value
 template <typename T>
 T& binary_tree<T>::iterator::operator*() {
   if(this->nodes.empty()) throw "tried to deference null iterator";
   else return this->nodes.top()->data;
 }
 
+// check if the iterator is at the same position as another iterator.
 template <typename T>
 bool binary_tree<T>::iterator::operator!=(const iterator& other) {
   return (this->nodes.empty() && other.nodes.empty())
