@@ -252,21 +252,21 @@ binary_tree<T>::iterator::iterator(const iterator& other) {
 // assignment operator
 template <typename T>
 typename binary_tree<T>::iterator binary_tree<T>::iterator::operator=(const iterator& other) {
-  this->nodes = other.nodes;
+  nodes = other.nodes;
   return *this;
 }
 
 // increment
 template <typename T>
 typename binary_tree<T>::iterator binary_tree<T>::iterator::operator++() {
-  if(!this->nodes.empty()) {
-    binary_tree<T>::node* me = this->nodes.top();
-    this->nodes.pop();
+  if(!nodes.empty()) {
+    binary_tree<T>::node* me = nodes.top();
+    nodes.pop();
     if(me->right) {
-      this->nodes.push(me->right);
+      nodes.push(me->right);
       me = me->right;
       while(me->left) {
-        this->nodes.push(me->left);
+        nodes.push(me->left);
         me = me->left;
       }
     }
@@ -278,14 +278,14 @@ typename binary_tree<T>::iterator binary_tree<T>::iterator::operator++() {
 template <typename T>
 T& binary_tree<T>::iterator::operator*() {
   if(this->nodes.empty()) throw "tried to deference null iterator";
-  else return this->nodes.top()->data;
+  else return nodes.top()->data;
 }
 
 // check if the iterator is at the same position as another iterator.
 template <typename T>
 bool binary_tree<T>::iterator::operator!=(const iterator& other) {
-  return (this->nodes.empty() && other.nodes.empty())
-   || (!this->nodes.empty() && !other.nodes.empty() && this->nodes.top() == other.nodes.top());
+  return (nodes.empty() && other.nodes.empty())
+   || (!nodes.empty() && !other.nodes.empty() && nodes.top() == other.nodes.top());
 }
 
 template <typename T>
