@@ -4,7 +4,7 @@ This is a repository of technical (EECS) and non-technical (everyone) questions 
 
 If you don't know how to use Github don't worry! All you need is a text editor, the Github application and a Github account. Follow the directions in the [Github section](#github).
 
-**DISCLAIMER:** interviewq is  *not* a place to dump company-specific interview questions. Doing so would probably violate NDA's that you may sign while interviewing with companies. Each question should be generic and should be associated with any specific company. They should be authored by yourself or other individual contributors. If you use outside work in your questions or solutions, you must given applicable credit to the original author.
+**DISCLAIMER:** interviewq is  *not* a place to dump company-specific interview questions. Doing so would probably violate NDA's that you may sign while interviewing with companies. Each question should be generic and shouldn't be associated with any specific company. They should be authored by yourself or other individual contributors. If you use outside work in your questions or solutions, you must give applicable credit to the original author.
 
 ## Non technical
 
