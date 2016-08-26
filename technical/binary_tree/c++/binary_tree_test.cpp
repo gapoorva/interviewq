@@ -40,7 +40,7 @@ int main() {
 }
 
 void testEmpty() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   int three = 3;
   tree.remove(three);
   int ten = 10;
@@ -50,7 +50,7 @@ void testEmpty() {
 }
 
 void testAdd() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(30);
   tree.add(17);
   tree.add(213);
@@ -59,7 +59,7 @@ void testAdd() {
 }
 
 void testFind() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(30);
   tree.add(17);
   tree.add(213);
@@ -90,7 +90,7 @@ void testFind() {
 */
 
 void testTraverse1() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(4);
   tree.add(2);
   tree.add(6);
@@ -106,7 +106,7 @@ void testTraverse1() {
 }
 
 void testTraverse2() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(7);
   tree.add(6);
   tree.add(5);
@@ -122,7 +122,7 @@ void testTraverse2() {
 }
 
 void testTraverse3() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(1);
   tree.add(2);
   tree.add(3);
@@ -138,7 +138,7 @@ void testTraverse3() {
 }
 
 void testTraverse4() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(7);
   tree.add(8);
   tree.add(9);
@@ -157,7 +157,7 @@ void testTraverse4() {
 }
 
 void testTraverse5() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(4);
   tree.add(3);
   tree.add(2);
@@ -176,7 +176,7 @@ void testTraverse5() {
 }
 
 void testTraverse6() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(5);
   tree.add(10);
   tree.add(1);
@@ -205,7 +205,7 @@ void testTraverse6() {
 */
 
 void testRemove1() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(4);
   tree.add(2);
   tree.add(6);
@@ -220,7 +220,7 @@ void testRemove1() {
 }
 
 void testRemove2() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(4);
   tree.add(2);
   tree.add(6);
@@ -238,7 +238,7 @@ void testRemove2() {
 }
 
 void testRemove3() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(4);
   tree.add(2);
   tree.add(6);
@@ -260,7 +260,7 @@ void testRemove3() {
 }
 
 void testRemove4() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(4);
   tree.add(2);
   tree.add(6);
@@ -276,7 +276,7 @@ void testRemove4() {
 
 void testRemove5() {
   // remove all by repeatedly removing root
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(4);
   tree.add(2);
   tree.add(6);
@@ -295,7 +295,7 @@ void testRemove5() {
 }
 
 void testRemove6() {
-  binary_tree<int> tree;
+  BinaryTree<int> tree;
   tree.add(5);
   tree.add(10);
   tree.add(1);
