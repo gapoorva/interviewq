@@ -290,6 +290,6 @@ bool binary_tree<T>::iterator::operator!=(const iterator& other) {
 
 template <typename T>
 bool binary_tree<T>::iterator::operator==(const iterator& other) {
-  return !(this->operator!=(other));
+  return !(*this != other);
 }
 
