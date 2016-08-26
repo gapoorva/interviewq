@@ -20,13 +20,15 @@ Solve the following problems related to anagrams:
 |----------|--------|-------|----------|
 | golang   | N      | N     | gapoorva |
 | python   | Nlog(N)| 1     | sarthakb |
+| c++      | N      | 1     | gapoorva |
 
 **Problem 2**
 
 | Language | Time   | Space | Authors  |
 |----------|--------|-------|----------|
-| golang   | logN   | 1     | gapoorva |
+| golang   | NlogN  | 1     | gapoorva |
 | python   | Nlog(N)| 1     | sarthakb |
+| c++      | N      | 1     | gapoorva |
 
 **Problem 3**
 
