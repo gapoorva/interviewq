@@ -30,4 +30,7 @@ Given the above shown graph, the path from source node `C` to destination node `
 
 ## Solutions
 
+| Language | Time   | Space | Authors  |
+|----------|--------|-------|----------|
+| c++      | N      | 2N    | gapoorva |
 

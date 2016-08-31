@@ -8,6 +8,8 @@ struct step {
   step(int n, step* p): node(n), prev(p) {};
 };
 
+static const int END = -1;
+
 static void savepath(int, std::vector<int>&, const std::unordered_map<int, int>&);
 
 std::vector<int> dfs(const bool matrix[20][20], int N, int source, int dest) {
@@ -19,7 +21,7 @@ std::vector<int> dfs(const bool matrix[20][20], int N, int source, int dest) {
   }
   std::vector<int> routing;
   routing.push_back(dest);
-  visited[dest] = -1;
+  visited[dest] = END;
   while(!routing.empty()) {
     int next = routing.back();
     routing.pop_back();
@@ -43,5 +45,5 @@ static void savepath(int start, std::vector<int>& path, const std::unordered_map
   do {
     path.push_back(start);
     start = visited.find(start)->second;
-  } while(start != -1);
+  } while(start != END);
 }
