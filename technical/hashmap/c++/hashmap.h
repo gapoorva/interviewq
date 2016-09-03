@@ -15,10 +15,10 @@ private:
     bucket(const std::string& k, const Value& v): key(k), value(v) {}
   };
   bucket* buckets;
-  size_t len;
-  size_t capacity;
-  double load;
-  bool* valid;
+  size_t len; // how many elements are in the map
+  size_t capacity; // how much space is in the underlying array
+  double load; // len/capacity
+  bool* valid; // which buckets are still empty
   std::hash<std::string> hasher;
   // compressess a hashvalue to the space [0, N-1]
   size_t compressor(size_t hashvalue) const {return hashvalue % capacity;}
